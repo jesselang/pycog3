@@ -8,15 +8,18 @@
 # on:
 #    tags: true
 
-sudo: required
+#sudo: required
 
 language: python
 
-services:
-  - docker
+#services:
+#  - docker
 
-before_install:
-- make docker
+#before_install:
+#- make docker
 
-script:
-- make test
+#script:
+#- make test
+
+
+
