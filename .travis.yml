@@ -8,22 +8,16 @@
 # on:
 #    tags: true
 
-#sudo: required
-
 language: python
 python:
   - 3.5
   - 3.6
   - nightly
 
-#services:
-#  - docker
+env:
+  - PYTHONPATH=tests/testbundle
 
-#before_install:
-#- make docker
-
-#script:
-#- make test
-
+script:
+  - python -m unittest discover -v tests/
 
 
