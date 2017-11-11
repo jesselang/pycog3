@@ -17,6 +17,9 @@ python:
 env:
   - PYTHONPATH=tests/testbundle
 
+install:
+  - pip3 install .
+
 script:
   - python -m unittest discover -v tests/
 
